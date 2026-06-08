@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpendingHistoryActivity">
+
+    <TextView
+        android:id="@+id/txtHistoryTitle"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="@string/spending_history_title"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblRecentTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recent_transactions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtHistoryTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/txtTransaction1"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/transaction_1"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/lblRecentTransactions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtTransaction2"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/transaction_2"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTransaction1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtTransaction3"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/transaction_3"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTransaction2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtTransaction4"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/transaction_4"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTransaction3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtTransaction5"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/transaction_5"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTransaction4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnHistoryHome"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/home"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/txtTransaction5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="42dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

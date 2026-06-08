@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExpenseActivity">
+
+    <TextView
+        android:id="@+id/txtExpenseTitle"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="@string/add_expense_title"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblExpenseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expense_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtExpenseTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:id="@+id/edtExpenseName"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:hint="@string/hint_expense_name"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/lblExpenseName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/lblExpenseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expense_amount"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edtExpenseName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/edtExpenseAmount"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:hint="@string/hint_dollar_amount"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/lblExpenseAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/lblExpenseCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expense_category"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edtExpenseAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp" />
+
+    <Spinner
+        android:id="@+id/spnExpenseCategory"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:entries="@array/expense_categories"
+        app:layout_constraintTop_toBottomOf="@id/lblExpenseCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnAddExpenseSubmit"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/add"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/spnExpenseCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/btnExpenseHome"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/home"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btnAddExpenseSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="14dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

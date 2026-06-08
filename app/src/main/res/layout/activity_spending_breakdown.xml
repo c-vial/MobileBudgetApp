@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpendingBreakdownActivity">
+
+    <TextView
+        android:id="@+id/txtBreakdownTitle"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="@string/spending_breakdown_title"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTimeframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeframe"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtBreakdownTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp" />
+
+    <Spinner
+        android:id="@+id/spnTimeframe"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:entries="@array/timeframes"
+        app:layout_constraintTop_toBottomOf="@id/lblTimeframe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtGraph"
+        android:layout_width="310dp"
+        android:layout_height="280dp"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/spnTimeframe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/btnBreakdownHome"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/home"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/txtGraph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="38dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

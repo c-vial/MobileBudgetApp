@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDashboardTitle"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="@string/dashboard_title"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCurrentBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_balance"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtDashboardTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/txtCurrentBalanceValue"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/lblCurrentBalance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/lblLastExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_expense"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtCurrentBalanceValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/txtLastExpenseValue"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/lblLastExpense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnAddIncome"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/add_income"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/txtLastExpenseValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/btnAddExpense"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/add_expense"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btnAddIncome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnSpendingHistory"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/spending_history"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btnAddExpense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnSpendingBreakdown"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/spending_breakdown"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btnSpendingHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="-90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDashboardTitle"
+        app:srcCompat="@drawable/img_buget_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">BudgetApp</string>
+
+    <!-- Screen Titles -->
+    <string name="dashboard_title">Budget Dashboard</string>
+    <string name="add_income_title">Add Income</string>
+    <string name="add_expense_title">Add Expense</string>
+    <string name="spending_history_title">Spending History</string>
+    <string name="spending_breakdown_title">Spending Breakdown</string>
+
+    <!-- Dashboard Labels -->
+    <string name="current_balance">Current Balance</string>
+    <string name="last_expense">Last Expense</string>
+
+    <!-- Input Labels and Hints -->
+    <string name="income_source">Income Source</string>
+    <string name="income_amount">Income Amount</string>
+    <string name="expense_name">Expense Name</string>
+    <string name="expense_amount">Expense Amount</string>
+    <string name="expense_category">Expense Category</string>
+    <string name="hint_income_source">Enter income source</string>
+    <string name="hint_dollar_amount">Enter dollar amount</string>
+    <string name="hint_expense_name">Enter expense name</string>
+
+    <!-- Spending History Transaction Rows -->
+    <string name="transaction_1">Transaction 1</string>
+    <string name="transaction_2">Transaction 2</string>
+    <string name="transaction_3">Transaction 3</string>
+    <string name="transaction_4">Transaction 4</string>
+    <string name="transaction_5">Transaction 5</string>
+
+    <!-- Other Labels -->
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="timeframe">Timeframe</string>
+
+    <!-- Buttons -->
+    <string name="add_income">Add Income</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="spending_history">Spending History</string>
+    <string name="spending_breakdown">Spending Breakdown</string>
+    <string name="add">Add</string>
+    <string name="home">Home</string>
+
+    <!-- Dropdown Arrays -->
+    <string-array name="expense_categories">
+        <item>Groceries</item>
+        <item>Dining Out</item>
+        <item>Gas</item>
+        <item>Bills</item>
+        <item>Housing</item>
+        <item>Entertainment</item>
+        <item>Shopping</item>
+        <item>Healthcare</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="timeframes">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+</resources>
