@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,54 +17,43 @@
         android:textColor="#000000"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/lblTimeframe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/timeframe"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:id="@+id/txtCategoryTotals"
+        android:layout_width="310dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="35dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="@string/no_spending_data"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@id/txtBreakdownTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="35dp" />
-
-    <Spinner
-        android:id="@+id/spnTimeframe"
-        android:layout_width="290dp"
-        android:layout_height="55dp"
-        android:entries="@array/timeframes"
-        app:layout_constraintTop_toBottomOf="@id/lblTimeframe"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
-
-    <TextView
-        android:id="@+id/txtGraph"
-        android:layout_width="310dp"
-        android:layout_height="280dp"
-        android:background="#EEEEEE"
-        android:gravity="center"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/spnTimeframe"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="38dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnBreakdownHome"
         android:layout_width="230dp"
         android:layout_height="55dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#4CAF50"
         android:text="@string/home"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/txtGraph"
+        app:layout_constraintTop_toBottomOf="@id/txtCategoryTotals"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="38dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="71dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBreakdownTitle"
+        app:srcCompat="@drawable/img_buget_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

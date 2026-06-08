@@ -60,5 +60,13 @@
         <item>Monthly</item>
         <item>Yearly</item>
     </string-array>
+    <!-- App Messages -->
+    <string name="no_expenses_yet">No expenses yet</string>
+    <string name="no_recent_transactions">No Recent Transactions</string>
+    <string name="income_added">Income added</string>
+    <string name="expense_added">Expense added</string>
+    <string name="enter_income_source_amount">Please enter income source and amount</string>
+    <string name="enter_expense_name_amount">Please enter expense name and amount</string>
+    <string name="no_spending_data">No spending data available</string>
 
 </resources>
