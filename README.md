@@ -31,7 +31,7 @@ Budget Tracker is an Android application designed to help users manage their per
 
 ## Technologies Used
 
-- Android Studio
+- Kotlin
 - Java
 - XML
 
