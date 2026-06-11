@@ -35,12 +35,12 @@ Budget Tracker is an Android application designed to help users manage their per
 - Java
 - XML
 
-## Installation
+## Project Setup
 
-1. Download or clone the project.
+1. Download the project files.
 2. Open the project in Android Studio.
-3. Allow Gradle to sync.
-4. Run the application on an Android emulator or Android device.
+3. Allow Gradle to complete synchronization.
+4. Build and run the application using an Android emulator or physical Android device.
 
 ## Usage
 
